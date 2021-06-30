@@ -15,10 +15,9 @@ npm install --save-dev eslint-plugin-prettier
 ```
 ```
 npm install --save-dev eslint-config-prettier
-```   
+```  
 \
 airbnb eslint 설정과 react-native-community eslint 관련 모듈설치
-
 ```
 npx install-peerdeps --dev eslint-config-airbnb
 ```
@@ -36,4 +35,20 @@ npm install --save-dev @react-native-community/eslint-config
     "airbnb/hooks",
     "plugin:prettier/recommended"
 ],
+```
+\
+IntelliJ툴 사용 시 설정창(⌘ + ,)에서 On save 체크박스 체크 후 적용할 시 코드 작성 중간중간 저장하면서 동시에 prettier를 할 수 있다.  
+(단축키 설정에 따라 ⌘S가 아닐 수 있음)
+![스크린샷 2021-06-30 오후 8 22 30](https://user-images.githubusercontent.com/38206489/123952717-59a84100-d9e1-11eb-8f14-6cb34c4cd329.png)
+
+## CLI 사용법
+
+eslint 자동수정은 아래명령어로 진행
+```
+eslint . --fix
+```
+
+prettier 자동수정은 아래 명령어로 진행
+```
+prettier --write "**/*.js"
 ```
