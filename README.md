@@ -25,7 +25,7 @@ npx install-peerdeps --dev eslint-config-airbnb
 npm install --save-dev @react-native-community/eslint-config
 ```
 \
-.eslintrc.json 파일의 extends 키에 다음과 같이 적어준다.
+.eslintrc.js 파일의 extends 키에 다음과 같이 적어준다.
 
 ```js
 "extends": [
